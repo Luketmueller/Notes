@@ -1,0 +1,15 @@
+# Require string input isalpha()
+
+input_check = False
+    variable = input("There is a question here? ")
+    while not variable.isalpha():
+        variable = input("It cant be a number. Pick again ")
+
+
+# Require a number input
+
+input_check = False
+    variable = input("There is a question here? ")
+    while not variable.isnumeric():
+        variable = input("It needs to be a number. Pick a number ")
+    variable = int(variable)
