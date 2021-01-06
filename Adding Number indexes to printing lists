@@ -1,0 +1,34 @@
+######### enumerate ######
+
+### EXAMPLE ######
+catlist = []
+
+while True:
+    newcat = input("Enter the name for cat number " + str(len(catlist) + 1) + " or enter nothing to stop")
+
+    if newcat == "":
+        break
+    else:
+        catlist = catlist + [newcat]
+        
+for index, name in enumerate(catlist):
+    print("cat number" + str(index+1) + " is " + name)
+    
+    
+    
+    ############################# COMPARING ONES THAT HAVE ENUMERATE AND NOT
+
+doglist = ["Dickhead","Bobby","Trump"]
+
+for index, dogname in doglist:
+    print("Dog number " + str(index+1) + " is " + dogname)
+
+### PRINTS TO ERROR
+
+
+doglist = ["Dickhead","Bobby","Trump"]
+
+for index, dogname in enumerate(doglist):
+    print("Dog number " + str(index+1) + " is " + dogname)
+    
+# prints successfully!
