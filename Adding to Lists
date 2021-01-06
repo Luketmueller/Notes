@@ -1,0 +1,30 @@
+############ Adding to lists. Can either do append OR can do []
+### With []s
+
+computers = []
+
+while True:
+    newcomputer = input("What is the computer you just bought?")
+    if newcomputer == "":
+        break
+    else:
+        computers = computers + [newcomputer]
+    
+for index, name in enumerate(computers):
+    print("computer number " + str(index) + " is a " + name)
+    
+    
+    
+### With append
+
+computers = []
+
+while True:
+    newcomputer = input("What is the computer you just bought?")
+    if newcomputer == "":
+        break
+    else:
+        computers = computers.append(newcomputer)
+    
+for index, name in enumerate(computers):
+    print("computer number " + str(index) + " is a " + name)
