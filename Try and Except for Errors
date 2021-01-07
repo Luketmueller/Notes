@@ -1,0 +1,59 @@
+####### Example of error
+
+def div42by(divideby):
+  try:
+    return 42/divideby
+  except ZeroDivisionError:
+    print("there was the zero division error")
+    
+div42by(2)
+div42by(10)
+div42by(4)
+div42by(0)
+div42by(2)
+
+# will print to a zero division error
+
+
+
+
+###### FIXING THIS WITH A TRY/EXCEPT LINE
+def div42by(divideby):
+  try:
+    return 42/divideby
+  except ZeroDivisionError:
+    print("there was the zero division error")
+    
+div42by(2)
+div42by(10)
+div42by(4)
+div42by(0)
+div42by(2)
+
+
+# Will print properly
+
+
+###### EXAMPLE 2
+
+print("how many cats do you have?")
+numcats = input()
+if int(numcats) > 4:
+  print("That is alot of cats")
+else:
+  print("That is not many cats")
+  
+#### if you were to enter a non interger here, it would error. However, try this below:
+
+print("how many cats do you have?")
+numcats = input()
+try:
+  if int(numcats) > 4:
+    print("That is alot of cats")
+  else:
+    print("That is not many cats")
+except ValueError:
+  print("You did not enter a number")
+
+
+
