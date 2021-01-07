@@ -1,0 +1,19 @@
+# Example 1
+
+print("cat","dog","mouse)
+
+will print to - cat, dog, mouse
+
+
+# Example 2 - Using "sep":
+
+print("cat","dog","mouse", sep = " ")
+
+will print to - cat dog mouse
+
+
+# Example 3 - Using sep:
+
+print("cat","dog","mouse", sep = "ABC")
+
+will print to - catABCdogABCmouse
