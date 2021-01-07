@@ -1,3 +1,5 @@
+###### EXAMPLE 1
+
 # Require string input isalpha()
 
 input_check = False
@@ -13,3 +15,26 @@ input_check = False
     while not variable.isnumeric():
         variable = input("It needs to be a number. Pick a number ")
     variable = int(variable)
+
+
+
+###### EXAMPLE 2
+
+print("how many cats do you have?")
+numcats = input()
+if int(numcats) > 4:
+  print("That is alot of cats")
+else:
+  print("That is not many cats")
+  
+#### if you were to enter a non interger here, it would error. However, try this below:
+
+print("how many cats do you have?")
+numcats = input()
+try:
+  if int(numcats) > 4:
+    print("That is alot of cats")
+  else:
+    print("That is not many cats")
+except ValueError:
+  print("You did not enter a number")
